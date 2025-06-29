@@ -260,6 +260,7 @@ async function run() {
                         district,
                         // status: { $in: ["approved", "active"] },
                         // work_status: "available",
+                        // work_status: "available",
                     })
                     .toArray();
 
