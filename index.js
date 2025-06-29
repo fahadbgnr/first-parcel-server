@@ -23,7 +23,7 @@ app.use(express.json());
 
 
 const serviceAccount = require("./firebase-admin-key.json");
-// ,,,,
+
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
@@ -261,7 +261,7 @@ async function run() {
                         district,
                         // status: { $in: ["approved", "active"] },
                         // work_status: "available",
-                        // work_status: "available",
+                        
                     })
                     .toArray();
 
